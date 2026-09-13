@@ -6,12 +6,10 @@
     <title>Oficina da Beleza - Cleide Barbosa</title>
     <link rel="stylesheet" href="style.css">
     
-    <!-- Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- Ícones FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -26,7 +24,6 @@
         </div>
     </header>
 
-    <!-- Sobre a Profissional -->
     <section class="about container">
         <div class="about-card">
             <h2>Sobre a Profissional</h2>
@@ -39,7 +36,6 @@
         </div>
     </section>
 
-    <!-- Serviços e Especialidades -->
     <section class="services container">
         <h2>Serviços e Especialidades</h2>
         <p class="section-subtitle">Clique em um serviço para ver fotos e mais detalhes:</p>
@@ -83,7 +79,7 @@
         </div>
     </section>
 
-    <!-- Tabela de Valores -->
+
     <section class="pricing container">
         <h2>Tabela de Valores</h2>
         <p class="section-subtitle">Confira os valores iniciais dos nossos principais serviços:</p>
@@ -113,16 +109,13 @@
         </div>
     </section>
 
-    <!-- Depoimentos de Clientes (Firebase Integração) -->
     <section class="reviews container">
         <h2>O Que Dizem Nossas Clientes</h2>
         
-        <!-- Onde os depoimentos do Firebase são carregados -->
         <div class="reviews-grid" id="reviews-container">
             <p style="text-align: center; grid-column: 1/-1; color: #888;">Carregando depoimentos...</p>
         </div>
 
-        <!-- Formulário para Enviar Novo Depoimento -->
         <div class="add-review-box">
             <h3>Deixe seu Depoimento</h3>
             <p>Seu feedback é muito importante para nós! Compartilhe sua experiência:</p>
@@ -154,7 +147,6 @@
         </div>
     </section>
 
-    <!-- Dúvidas Frequentes (FAQ) -->
     <section class="faq container">
         <h2>Dúvidas Frequentes</h2>
         <div class="faq-list">
@@ -173,7 +165,6 @@
         </div>
     </section>
 
-    <!-- Formulário de Agendamento -->
     <section class="booking container">
         <h2>Agende Seu Horário</h2>
         <p>Preencha as informações abaixo e solicite a disponibilidade via WhatsApp:</p>
@@ -212,7 +203,6 @@
         </form>
     </section>
 
-    <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
             <h3 class="footer-logo">Oficina da Beleza</h3>
@@ -230,16 +220,13 @@
         </div>
     </footer>
 
-    <!-- Botão Flutuante do WhatsApp -->
     <a href="https://wa.me/5561996245123?text=Olá,%20Cleide!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20horário." class="whatsapp-float" target="_blank" title="Falar no WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- SDKs do Firebase -->
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
 
-    <!-- Lógica JavaScript (Firebase + Agendamento WhatsApp) -->
     <script>
         const firebaseConfig = {
             apiKey: "AIzaSyDyyuISu4bJP0QCU4231vplmL81LudS-8k",
