@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina da Beleza - Cleide Barbosa</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="crown-icon"><i class="fas fa-crown"></i></div>
+            <h1 class="logo-title">Oficina da Beleza</h1>
+            <p class="subtitle">Especialista em Estética & Transformação Visagista</p>
+            <p class="author">Por <strong>Cleide Barbosa</strong></p>
+        </div>
+    </header>
+
+    <!-- Sobre a Profissional -->
+    <section class="about container">
+        <div class="about-card">
+            <h2>Sobre a Profissional</h2>
+            <h3>Cleide Barbosa</h3>
+            <p>Com anos de experiência no mercado da beleza, <strong>Cleide Barbosa</strong> oferece um atendimento personalizado e exclusivo. Nosso espaço foi pensado para garantir seu conforto e bem-estar durante cada procedimento.</p>
+            
+            <div class="schedule-box">
+                <p><i class="far fa-clock"></i> <strong>Horário de Atendimento:</strong> Com hora marcada</p> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços e Especialidades -->
+    <section class="services container">
+        <h2>Serviços e Especialidades</h2>
+        <p class="section-subtitle">Clique em um serviço para ver fotos e mais detalhes:</p>
+
+        <div class="cards-grid">
+            <a href="unhas.html" class="card-link">
+                <div class="card">
+                    <i class="fas fa-hand-sparkles service-icon"></i>
+                    <h3>Design & Cuidado de Unhas</h3>
+                    <p>Manicure, pedicure, cutilagem funda, esmaltação duradoura e spa dos pés.</p>
+                    <span class="btn-ver-fotos"><i class="fas fa-camera"></i> Ver Fotos</span>
+                </div>
+            </a>
+
+            <a href="manutencao.html" class="card-link">
+                <div class="card">
+                    <i class="fas fa-gem service-icon"></i>
+                    <h3>Alongamento & Manutenções</h3>
+                    <p>Banho de Gel, Fibra de Vidro, Gel na Tip, manutenções e nail art exclusiva.</p>
+                    <span class="btn-ver-fotos"><i class="fas fa-camera"></i> Ver Fotos</span>
+                </div>
+            </a>
+
+            <a href="cabelos.html" class="card-link">
+                <div class="card">
+                    <i class="fas fa-cut service-icon"></i>
+                    <h3>Tratamentos & Cabelos</h3>
+                    <p>Cortes, escovas, hidratação profunda, botox, selagem e colorações.</p>
+                    <span class="btn-ver-fotos"><i class="fas fa-camera"></i> Ver Fotos</span>
+                </div>
+            </a>
+
+            <a href="estetica.html" class="card-link">
+                <div class="card">
+                    <i class="fas fa-eye service-icon"></i>
+                    <h3>Sobrancelhas & Estética</h3>
+                    <p>Design de sobrancelhas personalizado, aplicação de Henna e depilação facial.</p>
+                    <span class="btn-ver-fotos"><i class="fas fa-camera"></i> Ver Fotos</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Tabela de Valores -->
+    <section class="pricing container">
+        <h2>Tabela de Valores</h2>
+        <p class="section-subtitle">Confira os valores iniciais dos nossos principais serviços:</p>
+        
+        <div class="price-grid">
+            <div class="price-card">
+                <h3>💅 Unhas Tradicionais</h3>
+                <p class="price">A partir de <span>R$ 40</span></p>
+                <p class="price-desc">Manicure e Pedicure com cutilagem e esmaltação.</p>
+            </div>
+            <div class="price-card highlights">
+                <span class="badge">Mais Pedido</span>
+                <h3>✨ Alongamento / Gel</h3>
+                <p class="price">A partir de <span>R$ 120</span></p>
+                <p class="price-desc">Aplicação de Fibra de Vidro ou Banho de Gel.</p>
+            </div>
+            <div class="price-card">
+                <h3>💇‍♀️ Corte & Escova</h3>
+                <p class="price">A partir de <span>R$ 60</span></p>
+                <p class="price-desc">Corte feminino modelado com finalização.</p>
+            </div>
+            <div class="price-card">
+                <h3>👁️ Design de Sobrancelha</h3>
+                <p class="price">A partir de <span>R$ 35</span></p>
+                <p class="price-desc">Design personalizado com ou sem aplicação de Henna.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos de Clientes (Firebase Integração) -->
+    <section class="reviews container">
+        <h2>O Que Dizem Nossas Clientes</h2>
+        
+        <!-- Onde os depoimentos do Firebase são carregados -->
+        <div class="reviews-grid" id="reviews-container">
+            <p style="text-align: center; grid-column: 1/-1; color: #888;">Carregando depoimentos...</p>
+        </div>
+
+        <!-- Formulário para Enviar Novo Depoimento -->
+        <div class="add-review-box">
+            <h3>Deixe seu Depoimento</h3>
+            <p>Seu feedback é muito importante para nós! Compartilhe sua experiência:</p>
+            
+            <form class="review-form" id="form-depoimento">
+                <div class="form-group">
+                    <label for="review-nome">Seu Nome:</label>
+                    <input type="text" id="review-nome" placeholder="Ex: Ana Paula" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="review-nota">Sua Nota:</label>
+                    <select id="review-nota" required>
+                        <option value="5">★★★★★ (5/5 - Excelente)</option>
+                        <option value="4">★★★★☆ (4/5 - Muito Bom)</option>
+                        <option value="3">★★★☆☆ (3/5 - Bom)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-texto">Seu Comentário:</label>
+                    <textarea id="review-texto" rows="3" placeholder="Conte como foi seu atendimento no Oficina da Beleza..." required></textarea>
+                </div>
+
+                <button type="button" onclick="salvarDepoimentoFirebase()" class="btn-enviar-review" id="btn-enviar-review">
+                    <i class="fas fa-paper-plane"></i> Publicar Depoimento
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Dúvidas Frequentes (FAQ) -->
+    <section class="faq container">
+        <h2>Dúvidas Frequentes</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3>De quanto em quanto tempo devo fazer a manutenção do gel?</h3>
+                <p>O recomendado é realizar a manutenção a cada 20 a 25 dias para garantir a saúde das unhas e a resistência da estrutura.</p>
+            </div>
+            <div class="faq-item">
+                <h3>É necessário agendar com antecedência?</h3>
+                <p>Sim! Trabalhamos exclusivamente com hora marcada para garantir que cada cliente receba atenção total sem filas de espera.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Quais são as formas de pagamento aceitas?</h3>
+                <p>Aceitamos PIX, dinheiro e cartões de débito e crédito.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Agendamento -->
+    <section class="booking container">
+        <h2>Agende Seu Horário</h2>
+        <p>Preencha as informações abaixo e solicite a disponibilidade via WhatsApp:</p>
+        
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="nome">Seu Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Ex: Maria Silva" required>
+            </div>
+
+            <div class="form-group">
+                <label for="servico">Serviço Desejado:</label>
+                <select id="servico" required>
+                    <option value="">Selecione o procedimento</option>
+                    <option value="Unhas Tradicionais">Unhas (Manicure / Pedicure)</option>
+                    <option value="Alongamento / Manutenção">Alongamento / Manutenção em Gel ou Fibra</option>
+                    <option value="Cabelos">Cabelos (Corte, Escova, Tratamentos, Química)</option>
+                    <option value="Sobrancelhas">Design de Sobrancelhas / Estética</option>
+                    <option value="Combo Completo">Combo (Cabelo + Unhas)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="data">Data Preferencial:</label>
+                <input type="date" id="data" required>
+            </div>
+
+            <div class="form-group">
+                <label for="horario">Horário Preferencial:</label>
+                <input type="time" id="horario" required>
+            </div>
+
+            <button type="button" onclick="enviarAgendamento()" class="btn-whatsapp-form">
+                <i class="fab fa-whatsapp"></i> Solicitar Agendamento via WhatsApp
+            </button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-logo">Oficina da Beleza</h3>
+            <p>Atendimento com hora marcada por <strong>Cleide Barbosa</strong></p>
+            <p><i class="fas fa-phone"></i> <strong>Contato / WhatsApp:</strong> (61) 9 9624-5123</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Planaltina - GO</p>
+            
+            <div class="social-links">
+                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="copyright">&copy; Oficina da Beleza - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5561996245123?text=Olá,%20Cleide!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20horário." class="whatsapp-float" target="_blank" title="Falar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SDKs do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+    <!-- Lógica JavaScript (Firebase + Agendamento WhatsApp) -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDyyuISu4bJP0QCU4231vplmL81LudS-8k",
+            authDomain: "oficina-da-beleza-8b1e6.firebaseapp.com",
+            projectId: "oficina-da-beleza-8b1e6",
+            storageBucket: "oficina-da-beleza-8b1e6.firebasestorage.app",
+            messagingSenderId: "815455445423",
+            appId: "1:815455445423:web:ab62f859cfa48137ab8f5a",
+            measurementId: "G-21XKWW64K2"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        function carregarDepoimentos() {
+            db.collection("depoimentos")
+              .orderBy("data", "desc")
+              .onSnapshot((querySnapshot) => {
+                const container = document.getElementById("reviews-container");
+                if (!container) return;
+                
+                container.innerHTML = "";
+
+                if (querySnapshot.empty) {
+                    container.innerHTML = '<p style="text-align: center; grid-column: 1/-1; color: #888;">Seja a primeira a deixar um depoimento!</p>';
+                    return;
+                }
+
+                querySnapshot.forEach((doc) => {
+                    const data = doc.data();
+                    let estrelas = "★".repeat(data.nota) + "☆".repeat(5 - data.nota);
+
+                    const card = `
+                        <div class="review-card">
+                            <div class="stars">${estrelas}</div>
+                            <p>"${data.texto}"</p>
+                            <strong>- ${data.nome}</strong>
+                        </div>
+                    `;
+                    container.innerHTML += card;
+                });
+            });
+        }
+
+        function salvarDepoimentoFirebase() {
+            const nome = document.getElementById('review-nome').value.trim();
+            const nota = parseInt(document.getElementById('review-nota').value);
+            const texto = document.getElementById('review-texto').value.trim();
+            const btn = document.getElementById('btn-enviar-review');
+
+            if (nome === '' || texto === '') {
+                alert('Por favor, preencha seu nome e o comentário!');
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+            db.collection("depoimentos").add({
+                nome: nome,
+                nota: nota,
+                texto: texto,
+                data: firebase.firestore.FieldValue.serverTimestamp()
+            })
+            .then(() => {
+                alert('Obrigado pelo seu depoimento!');
+                document.getElementById('review-nome').value = '';
+                document.getElementById('review-texto').value = '';
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-paper-plane"></i> Publicar Depoimento';
+            })
+            .catch((error) => {
+                console.error("Erro ao salvar: ", error);
+                alert('Ocorreu um erro ao salvar seu depoimento. Tente novamente.');
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-paper-plane"></i> Publicar Depoimento';
+            });
+        }
+
+        function enviarAgendamento() {
+            var nome = document.getElementById('nome').value;
+            var servico = document.getElementById('servico').value;
+            var data = document.getElementById('data').value;
+            var horario = document.getElementById('horario').value;
+
+            if (nome === '' || servico === '' || data === '' || horario === '') {
+                alert('Por favor, preencha todos os campos do agendamento!');
+                return;
+            }
+
+            var dataFormatada = data.split('-').reverse().join('/');
+            var numeroWhatsApp = '5561996245123';
+            
+            var mensagem = 'Olá, Cleide! Gostaria de agendar um horário no Oficina da Beleza:%0A%0A' +
+                '*Cliente:* ' + encodeURIComponent(nome) + '%0A' +
+                '*Serviço:* ' + encodeURIComponent(servico) + '%0A' +
+                '*Data Preferencial:* ' + encodeURIComponent(dataFormatada) + '%0A' +
+                '*Horário Preferencial:* ' + encodeURIComponent(horario);
+
+            var linkWhatsApp = 'https://wa.me/' + numeroWhatsApp + '?text=' + mensagem;
+            window.open(linkWhatsApp, '_blank');
+        }
+
+        window.onload = carregarDepoimentos;
+    </script>
+</body>
+</html>
